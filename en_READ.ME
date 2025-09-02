@@ -1,0 +1,67 @@
+Scanning Host in C
+
+My first C program scanning a host.
+
+The code below shows how to create a C program, work with variables, and print information to the terminal.
+
+⚠️ For educational purposes only • Developed by M!ss s3c
+
+📝 Step-by-step guide: Creating and running your program
+
+1. Create the program file
+
+In the terminal, type:
+
+nano program.c
+
+
+Add the following code:
+
+// My First C Program
+#include <stdio.h>
+
+int main(void) {
+
+    int porta = 80;
+    char ip[] = "192.168.0.1";
+    float ver = 1.1;
+
+    printf("Desec Security\n");
+    printf("Scan Version: %.1f \n", ver);  // prints only 1 decimal place
+    printf("Scanning Host: %s on port %i \n", ip, porta);
+
+    return 0;
+}
+
+2. Compile the program
+
+In the terminal, type:
+
+gcc program.c -o program
+
+
+gcc → C compiler.
+
+-o program → name of the generated executable file.
+
+3. Run the program
+./program
+
+4. Example output
+M!ss s3c
+Scan Version: 1.1
+Scanning Host: 192.168.0.1 on port 80
+
+👉 What you learned here
+
+int → integer variable type.
+
+char[] → variable type for text (string).
+
+float → variable type for decimal numbers.
+
+printf() → prints information to the screen.
+
+%.1f → formats float to one decimal place.
+
+Compiling C programs is mandatory before execution.
